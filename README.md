@@ -9,50 +9,16 @@ Please buy the HDC1008 breakout board at: https://www.tindie.com/stores/RFgerman
 This library is made by Florian Roesner.
 Released under GNU GPL v2.0 license.
 
-#List of funktions:
-##class HDC100X
-##{
+###List of funktions:
+###class HDC100X
+###{
 ####public:
 ######HDC100X();
-// set the slave address
 ######HDC100X(uint8_t address);
-// set the two bits the way you set the address jumpers this will generate and sets the slave address
 ######HDC100X(bool addr0, bool addr1);
-
-/* sets the mode and resolution and the state of the heater element. care must be taken, because it will change the temperature reading
-** in:
-** mode: HDC100X_TEMP_HUMI
-** tempRes: HDC100X_11BIT/HDC100X_14BIT
-** humiRes: HDC100X_8BIT/HDC100X_11BIT/HDC100X_14BIT
-** heaterState: ENABLE/DISABLE
-** out:
-*/ high byte of the configuration register
-
 ######uint8_t begin(uint8_t mode, uint8_t tempRes, uint8_t humiRes, bool heaterState);
-/* sets the mode, resolution and heaterState. Care must be taken, because it will change the temperature reading
-** in:
-** mode: HDC100X_TEMP/HDC100X_HUMI
-** resolution: HDC100X_8BIT/HDC100X_11BIT(both)
-HDC100X_14BIT(both)
-** heaterState: ENABLE/DISABLE
-** out:
-** high byte of the configuration register
-*/
 ######uint8_t begin(uint8_t mode, uint8_t resulution, bool heaterState);
-/* sets the slave address
-** in:
-** address: slave address byte
-** out:
-** none
-*/
 ######void setAddr(uint8_t address);
-/* sets the slave address
-** in:
-** addr0: true/false
-** addr1: true/false
-** out:
-** none
-*/
 ######void setAddr(bool addr0, bool addr1);
 ######void setDrPin(int8_t pin);
 ######uint8_t setMode(uint8_t mode, uint8_t tempRes, uint8_t humiRes);
@@ -71,4 +37,4 @@ HDC100X_14BIT(both)
 ######uint8_t dataReadyPin;
 ######uint8_t HDCmode;
 ######void setRegister(uint8_t reg);
-##}
+###}
