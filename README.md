@@ -8,6 +8,7 @@ Code is on GitHub: https://github.com/RFgermany/HDC100X-Arduino-Library.git
 Please buy the HDC1008 breakout board at: https://www.tindie.com/stores/RFgermany
 This library is made by Florian Roesner.
 Released under GNU GPL v2.0 license.
+More info in the .cpp file
 
 #####List of funktions:
 ######class HDC100X
