@@ -4,7 +4,7 @@ This is an Arduino library for the HDC1008/HDC1000 I²C temperature and humidity
 
 This library was written for the Texas Instruments HDC100X temperature and humidity sensor.
 It has been tested for the HDC1000 and the HDC1008.
-Code is on GitHub: https://github.com/RFgermany/HDC100X-Arduino-Library.git
+Code is on GitHub: https://github.com/RFgermany/HDC100X_Arduino_Library.git
 Please buy the HDC1008 breakout board at: https://www.tindie.com/stores/RFgermany
 This library is made by Florian Roesner.
 Released under GNU GPL v2.0 license.
